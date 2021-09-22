@@ -1,0 +1,116 @@
+
+//  全局样式
+* {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  box-sizing: border-box;
+  outline: none;
+}
+
+html {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.2em;
+  background-color: #f1f1f1;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+a {
+  color: #343440;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+.clearfix {
+  &::after {
+    content: "";
+    display: table;
+    height: 0;
+    line-height: 0;
+    visibility: hidden;
+    clear: both;
+  }
+}
+
+// 图标
+.iconfont {
+  font-size: 20px!important;
+  color: #5cd9e8;
+}
+
+//浮动
+.float-r {
+  float: right;
+}
+
+//浮动
+.float-l {
+  float: left;
+}
+
+// 字体加粗
+.fw-b {
+  font-weight: bold;
+}
+
+//文章一行显示，多余省略号显示
+.title-item {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.bg-color-black {
+  background-color: rgba(19, 25, 47, 0.6);
+}
+
+.bg-color-blue {
+  background-color: #1a5cd7;
+}
+
+.colorBlack {
+  color: #272727 !important;
+
+  &:hover {
+    color: #272727 !important;
+  }
+}
+
+.colorGrass {
+  color: #33cea0;
+
+  &:hover {
+    color: #33cea0 !important;
+  }
+}
+
+.colorRed {
+  color: #ff5722;
+
+  &:hover {
+    color: #ff5722 !important;
+  }
+}
+
+.colorText {
+  color: #d3d6dd !important;
+
+  &:hover {
+    color: #d3d6dd !important;
+  }
+}
+
+.colorBlue {
+  color: #257dff !important;
+
+  &:hover {
+    color: #257dff !important;
+  }
+}
