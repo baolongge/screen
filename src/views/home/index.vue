@@ -1,10 +1,7 @@
 <template>
   <div class="home" id="index" ref="appRef">
     <div class="content">
-      <div class="top-bar">
-        <div class="weather">29度 多云转晴</div>
-        <div class="t-date">2020-12-30</div>
-      </div>
+      <myHeader/>
       <h1 @click="click">home</h1>
       <div id="chart"></div>asdasdas
       123213
@@ -13,16 +10,19 @@
 </template>
 
 <script>
-import { ref, reactive, onMounted } from "vue";
+import { ref, reactive, onMounted, defineComponent } from "vue";
 import { useStore } from "vuex";
 import { useRouter, useRoute } from "vue-router";
 import useIndex from "@/util/useDraw";
 import { office } from "@/api";
+import myHeader from "./components/header.vue";
 import * as echarts from "echarts";
 
 export default {
   name: "MessageSection",
-
+  components: {
+    myHeader
+  },
   setup() {
     // const list = ref(null)
     const store = useStore();
@@ -90,13 +90,7 @@ export default {
 <style lang="scss" scoped>
 @import "@/assets/scss/index.scss";
 .home {
-  .top-bar {
-    width: 100%;
-    height: 80px;
-    display: flex;
-    justify-content: space-between;
-    padding: 0 20px;
-  }
+
 }
 
 .content {

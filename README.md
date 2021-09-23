@@ -6,9 +6,9 @@
 友情链接：
 
 1.  [Vue3 官方文档](https://composition-api.vuejs.org/zh/api.html#setup)
-2.  [element-plus官方文档]（https://element-plus.gitee.io/zh-CN/）
+2.  [element-plus官方文档](https://element-plus.gitee.io/zh-CN/)
 3.  [echarts 实例](https://echarts.apache.org/examples/zh/index.html)，[echarts API 文档](https://echarts.apache.org/zh/api.html#echarts)
-4.  [vite官方文档]（https://cn.vitejs.dev/）
+4.  [vite官方文档](https://cn.vitejs.dev/)
 
 
 ### 项目依赖安装
@@ -49,7 +49,7 @@ npm run dev
 └── vite.config.js                   # vue配置文件
 
 ```
-### 视图路由目录结构说明
+### 视图路由目录结构建议
 
 ```bash
 .
@@ -58,7 +58,6 @@ npm run dev
 │   │   ├── child-page                      # 子页面
 │   │   │   ├── components                  # 子页面的组件或者子页面
 │   │   │   └── index.vue
-│   │   ├── current-components.vue          #页面组件
 │   └── index.vue
 
 ```
