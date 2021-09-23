@@ -2,9 +2,9 @@
   <div class="home" id="index" ref="appRef">
     <div class="content">
       <myHeader/>
-      <h1 @click="click">home</h1>
-      <div id="chart"></div>asdasdas
-      123213
+      <h1 @click="click">home test</h1>
+      <div id="chart"></div>
+      home test
     </div>
   </div>
 </template>
